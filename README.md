@@ -1,6 +1,6 @@
 torch port of [Tweedie Moment Projected Diffusions for Inverse Problems](https://arxiv.org/pdf/2310.06721.pdf)
 ========================================================
-This is a pytorch port of the [JAX implementation](https://github.com/bb515/tmpd) (the JAX implementation is faster and more comprehensive). This repo contains the Torch implementation for the paper [Tweedie Moment Projected Diffusions for Inverse Problems](https://arxiv.org/pdf/2310.06721.pdf). An example of an application to a particular inverse problem, noisy super-resolution on FFHQ is below. The animation is of the expected value of a particular sample of an image over the time steps of our algorithm.
+This is a pytorch port of the [JAX implementation](https://github.com/bb515/tmpdjax) (the JAX implementation is faster and more comprehensive). This repo contains the Torch implementation for the paper [Tweedie Moment Projected Diffusions for Inverse Problems](https://arxiv.org/abs/2310.06721). An example of an application to a particular inverse problem, noisy super-resolution on FFHQ is below. The animation is of the expected value of a particular sample of an image over the time steps of our algorithm.
 
 ![cover-img1](./readme_FFHQ_0.05.png)
 
@@ -10,8 +10,7 @@ Thank you to [nPlan](https://www.nplan.io/), who are supporting this project.
 
 Contents:
 - [Installation](#installation)
-- [Experiments](#experiments)
-    - [Noisy inpainting, super resolution and deblur](#noisy-inpainting,-super-resolution-and-deblur)
+- [Examples](#examples)
 - [References](#references)
 
 ## Installation
@@ -78,6 +77,7 @@ docker run -it --rm --gpus=all dps-docker
 
 ```
 python3 sample_condition.py \
+--config \
 --model_config=configs/model_config.yaml \
 --diffusion_config=configs/diffusion_config.yaml \
 --task_config={TASK-CONFIG};
