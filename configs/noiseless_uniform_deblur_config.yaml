@@ -1,0 +1,23 @@
+dpsconditioning:
+  method: ps
+  params:
+    scale: 1.0  # 0.4
+
+tmpdconditioning:
+  method: tmp
+
+pigdmconditioning:
+  method: pig
+
+data:
+  name: ffhq
+  root: ./data/samples/
+
+measurement:
+  operator:
+    name: uniform_blur
+    kernel_size: 9
+  
+  noise: 
+    name: gaussian
+    sigma: 0.0
