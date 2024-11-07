@@ -1,4 +1,4 @@
-torch port of [Tweedie Moment Projected Diffusions for Inverse Problems](https://arxiv.org/pdf/2310.06721.pdf)
+torch port of [Tweedie Moment Projected Diffusions for Inverse Problems](https://openreview.net/pdf?id=4unJi0qrTE)
 ========================================================
 This is a pytorch port of the [JAX implementation](https://github.com/bb515/tmpdjax) (the JAX implementation is faster and more comprehensive). This repo contains the Torch implementation for the paper [Tweedie Moment Projected Diffusions for Inverse Problems](https://openreview.net/pdf?id=4unJi0qrTE). An example of an application to a particular inverse problem, noisy super-resolution on FFHQ is below. The animation is of the expected value of a particular sample of an image over the time steps of our algorithm.
 
